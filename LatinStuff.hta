@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gen-R8</title>
+	<HTA:APPLICATION 
+     APPLICATIONNAME="LatinStuff"
+     SCROLL="no"
+     SINGLEINSTANCE="yes"
+    >
+	<body STYLE="font:14 pt ar; color:lime;
+      filter:progid:DXImageTransform.Microsoft.Gradient
+      (GradientType=1, StartColorStr='#001000', EndColorStr='#0000FF')">
+  </head>
+
+  <script language="VBScript">
+    Sub Window_onLoad
+      window.resizeTo 1150,	300
+    End Sub
+  </script>
+	<script type="text/javascript" language="javascript">
+      function GenerateMe() {
+      WshShell = new ActiveXObject("WScript.Shell");
+      WshShell.Run("LatinStuff.bat", 1, false);
+      }
+    </script>
+	
+
+  <body>
+    <br>
+    <div style="text-align: center;">
+      <input style="background-color: lime;" type="button" value="Open the Latin Stuff" name="button"  onClick="GenerateMe">
+	  <br>
+	  <br>
+	  <br>
+	  <p style="text-align: center;">By Tom O</p>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  
+	</div>
+  </body>
+</html>
